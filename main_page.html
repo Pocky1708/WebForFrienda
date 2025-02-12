@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>This website for you</title>
+
+        <link rel="stylesheet" href="./page1.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Message to you</h1>
+            <h2>Send by me</h2>
+            <p>This is not a beautiful website but I want to show it to you</p>
+
+            <div class="btn">
+                <a href="javascript:void(0);" onclick="fadeAndRedirect('./start.html')">Start Journey</a>
+            </div>
+        </div>
+        <script>
+            function fadeAndRedirect(url) {
+                document.body.classList.add("fade-out");
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 2000);
+            }
+        </script>
+    </body>
+</html>
