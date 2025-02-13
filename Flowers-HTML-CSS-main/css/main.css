@@ -26,6 +26,27 @@ body.loaded {
   opacity: 1;
 }
 
+
+.title_message {
+  margin-bottom: 180px;
+  font-family: 'Arial', sans-serif;
+  color: yellow;
+  position: absolute;
+  font-weight: bold;
+  letter-spacing: 10px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .night {
   position: fixed;
   left: 50%;
@@ -527,6 +548,7 @@ body.loaded {
   -webkit-animation: growing-grass-ans--1 2s 2.6s backwards;
   animation: growing-grass-ans--1 2s 2.6s backwards;
 }
+
 @-webkit-keyframes growing-grass-ans--1 {
   0% {
     transform-origin: bottom left;
@@ -1560,3 +1582,52 @@ body.loaded {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 } /*# sourceMappingURL=main.css.map */
+
+/* Reset de estilos básicos */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Media Queries para tamaños de pantalla diferentes */
+@media screen and (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+  h1 {
+      font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+  h1 {
+      font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes */
+  h1 {
+      font-size: 2em;
+  }
+}
+
+/* Agregar más estilos según sea necesario */
